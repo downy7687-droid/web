@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=IBM+Plex+Sans+KR&family=Noto+Serif+KR:wght@200..900&family=Song+Myung&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: blueviolet;
+}
+
+.container {
+  width: 500px;
+  border: 1px solid #fff;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 1. hsl / 2.rgb / 3.16진수/ 4.rgba  구글웹폰트 4개 */
+.ul1 {
+  background-color: hsl(5, 78%, 79%);
+  font-family: "Noto Serif KR", serif;
+  font-size: 20px;
+  font-weight: '300';
+}
+
+.ul2 {
+  background-color: rgb(215, 237, 243);
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 30px;
+  font-weight: '500';
+}
+
+.ul3 {
+  background-color: #f4b3e8;
+  font-family: "Song Myung", serif;
+  font-size: 40px;
+  font-weight: '700';
+}
+
+.ul4 {
+  background-color: rgba(224, 110, 138, 0.916);
+  font-family: "Hi Melody", sans-serif;
+  font-size: 50px;
+  font-weight: '900';
+}

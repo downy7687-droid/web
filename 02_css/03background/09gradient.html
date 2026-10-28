@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그라데이션 배경</title>
+  <style>
+    div {
+      width: 500px;
+      height: 500px;
+      margin: 10;
+    }
+
+    .gr1 {
+      background: linear-gradient(135deg, #ff8a1e 0%, #ffe2a6 100%);
+    }
+
+    .gr2 {
+      background: radial-gradient(circle at 50% 50%, #ff8a1e 0%, #ffe2a6 100%);
+    }
+
+    .gr3 {
+      background: linear-gradient(135deg, #ff8a1e 0%, #ffe2a6 100%);
+      background: linear-gradient(135deg, #ff8a1e 0%, color-mix(in oklch, #ff8a1e 38%, #ffe2a6) 50%, #ffe2a6 100%);
+    }
+
+    .gr4 {
+      background-color: #ffe2a6;
+      background-image:
+        radial-gradient(circle at 18% 26%, color-mix(in oklch, #ff8a1e 88%, white) 0 14%, transparent 38%),
+        radial-gradient(circle at 82% 22%, color-mix(in oklch, #ffe2a6 74%, white) 0 16%, transparent 42%),
+        repeating-radial-gradient(circle at 52% 58%, transparent 0 28px, color-mix(in oklch, #ff8a1e 34%, transparent) 29px 30px, transparent 31px 56px),
+        conic-gradient(from 135deg at 50% 50%, #ff8a1e, #ffe2a6, color-mix(in oklch, #ff8a1e 42%, #ffe2a6), #ff8a1e);
+      background-blend-mode: screen, lighten, overlay, normal;
+    }
+
+    .gr5 {
+      background-color: #ffe2a6;
+      background-image:
+        radial-gradient(ellipse at 12% 24%, color-mix(in oklch, #ff8a1e 84%, white) 0 16%, transparent 46%),
+        radial-gradient(ellipse at 82% 28%, color-mix(in oklch, #ffe2a6 76%, white) 0 18%, transparent 48%),
+        radial-gradient(ellipse at 52% 84%, color-mix(in oklch, #ff8a1e 52%, #ffe2a6) 0 22%, transparent 54%),
+        radial-gradient(circle, rgba(255, 255, 255, .18) 0 1px, transparent 1px),
+        linear-gradient(135deg, color-mix(in oklch, #ffe2a6 82%, black), color-mix(in oklch, #ff8a1e 18%, #ffe2a6));
+      background-size: 100% 100%, 100% 100%, 100% 100%, 10px 10px, 100% 100%;
+      background-blend-mode: screen, lighten, overlay, soft-light, normal;
+    }
+
+    .gr6 {
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, .5), transparent 28%, rgba(255, 255, 255, .22) 52%, transparent 72%),
+        linear-gradient(135deg, #ff8a1e, #ffe2a6);
+      background-blend-mode: normal;
+    }
+  </style>
+</head>
+
+<body>
+<div>그라</div>
+</body>
+
+</html>

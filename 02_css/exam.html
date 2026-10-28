@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JUST 쇼핑몰</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+<div id="wrap">
+
+  <!-- A : 헤더 -->
+  <header>
+    <h1>로고</h1>
+    <nav>
+      <ul class="gnb">
+        <li><a href="#">MENU-1</a></li>
+        <li><a href="#">MENU-2</a></li>
+        <li><a href="#">MENU-3</a></li>
+        <li><a href="#">MENU-4</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- B : 이미지 슬라이드 -->
+  <div class="slide">
+    이미지 슬라이드
+  </div>
+
+  <!-- C : 콘텐츠 -->
+  <section class="contents">
+    <div class="notice">공지사항 / 갤러리</div>
+    <div class="banner">배너</div>
+    <div class="shortcut">바로가기</div>
+  </section>
+
+  <!-- D : 푸터 -->
+  <footer>
+    <div class="footer-logo">로고</div>
+    <div class="copyright">Copyright</div>
+    <div class="sns">SNS</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
+
+/* 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 전체 레이아웃 */
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* A : 헤더 */
+header {
+  width: 100%;
+  height: 100px;
+  background: #ddd;
+}
+
+header h1 {
+  width: 200px;
+  height: 100px;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+}
+
+header nav {
+  width: 600px;
+  float: right;
+  margin-top: 60px;
+}
+
+header nav ul.gnb > li {
+  width: 25%;
+  height: 40px;
+  float: left;
+  background: #aaa;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #fff;
+}
+
+/* B : 이미지 슬라이드 */
+.slide {
+  width: 100%;
+  height: 300px;
+  background: #eee;
+  text-align: center;
+  line-height: 300px;
+}
+
+/* C : 콘텐츠 */
+.contents {
+  width: 100%;
+  height: 200px;
+  background: #ccc;
+}
+
+.contents > div {
+  width: 33.333%;
+  height: 200px;
+  float: left;
+  text-align: center;
+  line-height: 200px;
+  border: 1px solid #fff;
+}
+
+/* D : 푸터 */
+footer {
+  width: 100%;
+  height: 100px;
+  background: #999;
+}
+
+footer > div {
+  height: 100px;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+.copyright {
+  width: 800px;
+}
+
+.sns {
+  width: 200px;
+}
