@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
@@ -26,14 +27,112 @@ body {
   margin: 0 auto;
 }
 
-header {height: 100px;
-background: pink;}
+header {
+  height: 100px;
+  background: pink;
+  display: flex;
+  justify-content: space-between;
+}
 
-.img_slide {height: 300px;
-background: plum;}
+header h1 {
+  background: lavender;
+}
 
-.contents {height: 200px;
-background: rgb(174, 221, 160);}
+header nav {
+  width: 70%;
+  background: red;
+  margin-right: 20px;
+  align-self: flex-end;
+}
 
-footer {height: 100px;
-background: rgb(250, 254, 175)}
+header nav ul.gnb {
+  display: flex;
+}
+
+header nav ul.gnb>li {
+  position: relative;
+  flex: 1;
+}
+
+header nav ul.gnb>li>a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+
+header nav ul.gnb>li>ul {
+  position: absolute;
+  width: 100%;
+}
+
+header nav ul.gnb>li>ul>li {
+  height: 36px;
+  line-height: 36px;
+}
+
+header nav ul.gnb>li>ul>li>a {
+  display: block;
+}
+
+
+.img_slide {
+  height: 300px;
+  background: plum;
+
+}
+
+.contents {
+  height: 200px;
+  background: rgb(174, 221, 160);
+  display: flex;
+}
+
+.contents h2 {
+  font-weight: 400;
+  font-size: 18px;
+  background: #4EBA00;
+  padding: 6px 8px;
+  width: 100px;
+  text-align: center;
+  line-height: 1;
+  border-radius: 4px 4px 0 0;
+}
+
+.contents .notice {
+  background: lightcoral;
+  flex: 1.2;
+}
+
+.contents .gal {
+  background: lightgreen;
+  flex: 1;
+}
+
+.contents .banner {
+  background: lightcyan;
+  flex: 1;
+}
+
+
+footer {
+  height: 100px;
+  background: rgb(250, 254, 175);
+  display: flex;
+}
+
+footer .logo {
+  background: red;
+  display: flex;
+  align-items: center;
+}
+
+footer .copy {
+  background: green;
+  flex: 1;
+}
+
+footer .fam {
+  width: 200px;
+  background: blue;
+}
