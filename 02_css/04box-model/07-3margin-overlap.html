@@ -4,52 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>margin 중첩 현상</title>
+  <title>마진 중첩 현상</title>
   <style>
     * {
       margin: 0;
       padding: 0;
     }
-
-    .container {
+    .container{
       width: 1300px;
       height: 500px;
       background: #ccc;
-      border: 2px solid red;
+      border:2px solid red;
       margin: 50px auto;
     }
-
-    .first {
+    .first{
       margin: 50px auto 0;
     }
-
-    main {
+    main{
       background: lavender;
       padding-block: 30px;
     }
-
-    main .container {
+    main .container{
       margin-block: 0;
       width: 1500px;
       background: green;
       padding-top: 10px;
     }
-
-    #box1 {
+    #box1{
       width: 300px;
       height: 300px;
       background: pink;
       /* margin-top: 10px; */
     }
-
-    #box2 {
-     width: 100px;
+    #box2{
+      width: 100px;
       height: 50px;
       background: gold;
       margin-block: 50px;
     }
-
-    #box3 {
+    #box3{
       width: 200px;
       height: 100px;
       background: lightcoral;

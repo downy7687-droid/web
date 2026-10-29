@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>공백,줄바꿈 처리방법 지정</title>
+  <title>공백, 줄바꿈 처리방법 지정</title>
   <style>
-    *{
+    * {
       margin: 0;
       padding: 0;
     }
-    section{
+
+    section {
       line-height: 1;
       border: 1px solid #ccc;
       margin-bottom: 30px;
@@ -18,13 +20,21 @@
       white-space: nowrap;
     }
     p.b{
-      /* 공백을 하나로 처리, 자동 줄바꿈 됨, 기본값 */
+      /* 공백을 하나로 처리, 자동 줄바꿈 됨, 기본 값 */
       white-space: normal;
     }
-    p.c{white-space: pre;}
-    p.d{white-space: pre-wrap;}
-    p.f{white-space: pre-line;}
-
+    p.c{
+      white-space: pre;
+    }
+    p.d{
+      white-space: pre-wrap;
+    }
+    p.e{
+      white-space: pre-line;
+    }
+    p.f{
+      white-space: break-spaces;
+    }
   </style>
 </head>
 

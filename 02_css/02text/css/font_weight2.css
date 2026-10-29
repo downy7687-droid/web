@@ -23,12 +23,16 @@ body {
 
 .fw_4 {
   font-weight: 500;
+  color: red;
 }
 
 .fw_5 {
-  font-weight: 900;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .fw_6 {
   font-weight: 900;
+  line-height: 3;
+  font:300 50px "Roboto", sans-serif;
 }

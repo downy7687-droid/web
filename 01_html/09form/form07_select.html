@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>select 태그</title>
 </head>
-
 <body>
   <h1>여름 방학 특강 신청</h1>
   <form>
@@ -17,15 +15,15 @@
           <label>학번 <input type="number" autofocus></label>
         </li>
         <li>
-          <label for="uname">이름</label>
-          <input type="text" id="uname" required>
+          <label for="uname">이름 </label>
+          <input type="text" id="uname">
         </li>
         <li>
           <label for="class">학과</label>
           <select id="class" size="3" multiple>
             <option value="a1">건축공학과1</option>
             <option value="a2">건축공학과2</option>
-            <option value="a3">건축공학과3</option>
+            <option value="a3" selected>건축공학과3</option>
             <option value="a4">건축공학과4</option>
             <option value="a5">건축공학과5</option>
             <option value="a6">건축공학과6</option>
@@ -42,9 +40,8 @@
             </optgroup>
             <optgroup label="인문대학">
               <option value="c1">사학과</option>
-              <option value="c2">어문학부</option>
+              <option value="c2" selected>어문학부</option>
               <option value="c3">철학과</option>
-
             </optgroup>
           </select>
         </li>
@@ -52,5 +49,4 @@
     </fieldset>
   </form>
 </body>
-
 </html>

@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="default.css">
   <title>flex</title>
+  <link rel="stylesheet" href="default.css">
   <style>
-    .parent {
+    .parent{
       margin-top: 100px;
     }
-
-    .flex_container {
+    .flex_container{
       display: flex;
     }
-
     /* flex : flex-grow flex-shrink flex-basis */
-    .flex_item {
+    .flex_item{
       flex: 1 1 0;
+      flex: 1;
     }
-
-    .con .flex_item:nth-child(1) {flex: 1;}
-
-    .con .flex_item:nth-child(2) {flex: 3;}
-
-    .con .flex_item:nth-child(3) {flex: 2;}
-
+    .con{width: 800px; margin: 0 auto;}
+    .con .flex_item:nth-child(1){
+      flex: 1;
+    }
+    .con .flex_item:nth-child(2){
+      flex: 3;
+    }
+    .con .flex_item:nth-child(3){
+      flex: 2;
+    }
     .parent .flex_item{
       flex: 1 1 auto;
+      flex: 1 auto;
     }
   </style>
 </head>
